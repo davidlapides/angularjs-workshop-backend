@@ -84,6 +84,8 @@ GEM
     hitimes (1.2.2)
     i18n (0.7.0)
     json (1.8.3)
+    jsonapi-resources (0.5.8)
+      rails (>= 4.0)
     listen (2.10.1)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
@@ -209,6 +211,7 @@ DEPENDENCIES
   guard-bundler
   guard-rspec
   guard-rubocop
+  jsonapi-resources (= 0.5.8)
   pg
   pry (~> 0.10.1)
   pry-byebug (~> 3.1.0)

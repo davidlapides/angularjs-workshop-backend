@@ -6,6 +6,9 @@ gem 'rails', '4.1.0'
 # Use postgres as the database for Active Record
 gem 'pg'
 
+# JSONAPI resources gem for JSONAPI conformity
+gem 'jsonapi-resources', '0.5.8'
+
 group :test, :development do
   gem 'byebug', '~> 4.0.5'
   gem 'factory_girl_rails', '~> 4.5.0'
