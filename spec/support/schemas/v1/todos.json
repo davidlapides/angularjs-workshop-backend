@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Todos",
+  "$ref": "jsonapi.json#/",
+  "oneOf": [
+    {
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/todo" }
+        },
+        "meta": {
+          "type": "object",
+          "required": [ "count" ],
+          "properties": {
+            "count": { "type": "integer" }
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "data": { "$ref": "#/definitions/todo" }
+      }
+    }
+  ],
+  "definitions": {
+    "todo": {
+      "type": "object",
+      "required": [ "attributes", "relationships" ],
+      "properties": {
+        "type": { "type": "string", "enum": [ "templates" ] },
+        "attributes": {
+          "type": "object",
+          "required": [
+            "task",
+            "description",
+            "complete",
+            "updated_at"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "task": { "type": "string" },
+            "description": { "type": "string" },
+            "complete": { "type": "boolean" },
+            "updated_at": { "type": "integer" }
+          }
+        }
+      }
+    }
+  }
+}
