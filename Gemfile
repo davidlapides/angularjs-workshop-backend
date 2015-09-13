@@ -33,5 +33,6 @@ group :test do
   gem 'capybara', '~> 2.4.4'
   gem 'database_cleaner', '~> 1.1.1'
   gem 'fuubar', '~> 2.0.0'
+  gem 'json-schema'
   gem 'timecop', '~> 0.7.3'
 end
