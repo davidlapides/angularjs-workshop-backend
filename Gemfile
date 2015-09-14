@@ -7,6 +7,9 @@ gem 'rails', '4.1.0'
 # Use postgres as the database for Active Record
 gem 'pg'
 
+# Needed for heroku
+gem 'uglifier'
+
 # JSONAPI resources gem for JSONAPI conformity
 gem 'jsonapi-resources', '0.5.8'
 
