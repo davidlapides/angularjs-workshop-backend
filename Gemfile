@@ -10,6 +10,8 @@ gem 'pg'
 # JSONAPI resources gem for JSONAPI conformity
 gem 'jsonapi-resources', '0.5.8'
 
+gem 'unicorn'
+
 group :test, :development do
   gem 'byebug', '~> 4.0.5'
   gem 'factory_girl_rails', '~> 4.5.0'
@@ -35,4 +37,8 @@ group :test do
   gem 'fuubar', '~> 2.0.0'
   gem 'json-schema'
   gem 'timecop', '~> 0.7.3'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
