@@ -14,6 +14,7 @@ gem 'uglifier'
 gem 'jsonapi-resources', '0.5.8'
 
 gem 'unicorn'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :test, :development do
   gem 'byebug', '~> 4.0.5'
