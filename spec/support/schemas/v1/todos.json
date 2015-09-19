@@ -20,30 +20,32 @@
     },
     {
       "properties": {
-        "data": { "$ref": "#/definitions/todo" }
+        "data": {
+          "$ref": "#/definitions/todo"
+        }
       }
     }
   ],
   "definitions": {
     "todo": {
       "type": "object",
-      "required": [ "attributes", "relationships" ],
+      "required": [ "attributes" ],
       "properties": {
-        "type": { "type": "string", "enum": [ "templates" ] },
+        "type": { "type": "string", "enum": [ "todos" ] },
         "attributes": {
           "type": "object",
           "required": [
             "task",
             "description",
             "complete",
-            "updated_at"
+            "updated-at"
           ],
           "additionalProperties": false,
           "properties": {
             "task": { "type": "string" },
             "description": { "type": "string" },
             "complete": { "type": "boolean" },
-            "updated_at": { "type": "integer" }
+            "updated-at": { "type": "string" }
           }
         }
       }
